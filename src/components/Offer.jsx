@@ -9,7 +9,7 @@ return (
         
         </div>
         <div className='pr-btns'>
-            <a href='#' className='pr-btn'>JOIN NOW</a>
+            <p className='pr-btn'>JOIN NOW</p>
 
         </div>
 
