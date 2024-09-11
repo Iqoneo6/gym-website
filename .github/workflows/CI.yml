@@ -23,4 +23,9 @@ jobs:
 
     - name: Build project
       run: npm run build
-#this
+
+    - name: sourcemovement
+      run: sudo cp -r /home/ubuntu/actions-runner/_work/gym-website/gym-website/build/ * /var/www/html/gym
+  
+    - name: apache2restart
+      run: sudo service apache2 restart
