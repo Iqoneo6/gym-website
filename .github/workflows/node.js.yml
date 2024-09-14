@@ -1,4 +1,4 @@
-name: ci and cd work flow
+name: ci and cd work flow1
 
 on:
   push:
