@@ -1,4 +1,4 @@
-name: ci and cd work flow1
+name: SPA
 
 on:
   push:
@@ -23,3 +23,9 @@ jobs:
 
       - name: Build project
         run: npm run build
+
+      - name: sourcemovement
+        run: sudo cp -r /home/ubuntu/actions-runner/_work/gym-website/gym-website/build/ * /var/www/html/actions-runner
+
+      - name: apache2restart
+        run: sudo service apache2 restart
