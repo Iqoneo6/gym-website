@@ -9,7 +9,7 @@ const About=()=>{
           </div>
           <div className='about-text'>
             <h1>LEARN  MORE ABOUT US</h1>
-            <p>  we have first Gym1 We Are From Gym We Are From Gym We Are From Gym We Are From Gym</p>
+            <p>  we have some of the Gym1 We Are From Gym We Are From Gym We Are From Gym We Are From Gym</p>
           
           <button> Read More</button>
           </div>
