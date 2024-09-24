@@ -25,7 +25,7 @@ jobs:
         run: npm run build
 
       - name: sourcemovement
-        run: sudo cp -r /home/ubuntu/actions-runner/_work/gym-website/gym-website/build/ * /var/www/html/dev
+        run: sudo cp -r /home/ubuntu/actions-runner/_work/gym-website/gym-website/build/ * /var/www/html/sac
       
-      - name: service nginx restart
-        run: sudo service nginx restart
+      # - name: service nginx restart
+      #   run: sudo service nginx restart
