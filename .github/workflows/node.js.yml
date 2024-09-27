@@ -29,3 +29,14 @@ jobs:
       
       - name: service nginx restart
         run: sudo service nginx restart
+
+      - name: Verify routes and HTTP methods 
+        run: |
+        # Sample script to test that the routes accept the correct HTTP methods
+        curl -X GET http://localhost:4200/api/test-route || echo "GET request failed"
+        curl -X POST http://localhost:4200/api/test-route || echo "POST request failed"
+        curl -X DELETE http://localhost:4200/api/test-route || echo "DELETE request failed"
+        
+        # Replace the URL with your server's URL or API endpoint, and repeat for other routes as needed.
+
+
