@@ -1,4 +1,4 @@
-name: Github Action
+name: GA
 
 on:
   push:
