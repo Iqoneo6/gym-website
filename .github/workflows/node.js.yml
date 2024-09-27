@@ -24,16 +24,16 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: sourcemovement
-        run: sudo cp -r /home/ubuntu/actions-runner/_work/gym-website/gym-website/build/ * /var/www/html/sac
+      # - name: sourcemovement
+      #   run: sudo cp -r /home/ubuntu/actions-runner/_work/gym-website/gym-website/build/ * /var/www/html/sac
       
-      - name: service nginx restart
-        run: sudo service nginx restart
+      # - name: service nginx restart
+      #   run: sudo service nginx restart
 
-      - name: Verify routes and HTTP methods 
-        run:  curl -X GET http://localhost:4200/api/test-route || echo "GET request failed"
-              curl -X POST http://localhost:4200/api/test-route || echo "POST request failed"
-              curl -X DELETE http://localhost:4200/api/test-route || echo "DELETE request failed"
-        # Replace the URL with your server's URL or API endpoint, and repeat for other routes as needed.
+      # - name: Verify routes and HTTP methods 
+      #   run:  curl -X GET http://localhost:4200/api/test-route || echo "GET request failed"
+      #         curl -X POST http://localhost:4200/api/test-route || echo "POST request failed"
+      #         curl -X DELETE http://localhost:4200/api/test-route || echo "DELETE request failed"
+      #   # Replace the URL with your server's URL or API endpoint, and repeat for other routes as needed.
 
 
