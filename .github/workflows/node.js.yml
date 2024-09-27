@@ -1,4 +1,4 @@
-name: Github Action
+name: FirstAction
 
 on:
   push:
