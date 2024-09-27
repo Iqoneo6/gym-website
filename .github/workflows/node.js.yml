@@ -1,4 +1,4 @@
-name: Ci and CD Flow
+name:Flow
 
 on:
   push:
