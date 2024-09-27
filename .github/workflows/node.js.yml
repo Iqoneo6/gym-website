@@ -1,4 +1,4 @@
-name: Githubaction
+name: Github Action
 
 on:
   push:
