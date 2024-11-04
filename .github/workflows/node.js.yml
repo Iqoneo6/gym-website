@@ -25,8 +25,8 @@ jobs:
     - name: Build project
       run: npm run build
       
-    # - name: sourcemovement
-    #   run: sudo cp -r /home/administrator/Live-Project/Live_Front/wizinoa/_work/Wizinoa_siteV1/Wizinoa_siteV1/dist/ * /var/www/html/wizinoa
+    - name: sourcemovement
+      run: sudo cp -r /home/ubuntu/actions-runner/_work/gym-website/gym-website/build/ * /var/www/html/devops
   
     # - name: nginxrestart
     #   run: sudo service nginx restart
