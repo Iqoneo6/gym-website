@@ -28,5 +28,5 @@ jobs:
     - name: sourcemovement
       run: sudo cp -r /home/ubuntu/actions-runner/_work/gym-website/gym-website/build/ * /var/www/html/devops
   
-    # - name: nginxrestart
-    #   run: sudo service nginx restart
+    - name: nginxrestart
+      run: sudo service nginx restart
